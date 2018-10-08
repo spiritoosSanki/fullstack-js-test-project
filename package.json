@@ -1,0 +1,20 @@
+{
+  "name": "fullstack-js",
+  "version": "1.0.0",
+  "description": "Test building a fullstack js project",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "author": "Sankar",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  },
+  "dependencies": {
+    "npm": "^6.3.0"
+  }
+}
