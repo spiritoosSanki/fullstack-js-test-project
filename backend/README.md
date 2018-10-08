@@ -7,3 +7,6 @@ Here is the stack for the node.js backend:
 - sequelize (orm to connect map and connect to mariadb)
 - uuid (to generate uuids for primary keys)
 - I added a really simple system to check ressource access (SecurityService.checkAccess([TYPE_ADMIN, TYPE_USER], ctx))
+- I added a service to read parameters from a config file. It manages enviromnent too.
+
+To install and run the app, follow instructions in the readme of the root folder.
