@@ -1,3 +1,5 @@
+*****DRAFT FILE******
+
 Install git and npm
 Start the terminal as admin
 On checkout go to backend, run: npm i
