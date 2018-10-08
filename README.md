@@ -1,4 +1,4 @@
-#INTRODUCTION:
+# INTRODUCTION:
 
 My goal was to build the base of a fullstack js web app, ready to use.
 I've been reading on this for some time now and I wanted to try.
@@ -24,7 +24,7 @@ Frontend in react.js:
 - redux (for state management)
 - saga (for async tasks)
 
-#INSTALL
+# INSTALL
 
 Checkout the project.
 In the root folder, run: npm i.
@@ -43,7 +43,7 @@ To start frontend, in frontend folder: npm start
 The backend will run on port 4000.
 The frontend will run on port 3000.
 
-#TIPS
+# TIPS
 
 Test the login with:
 curl -H "Content-Type: application/json" -X POST --data "{\"login\":\"admin\", \"password\":\"test\"}" http://localhost:4000/v1/security/login
