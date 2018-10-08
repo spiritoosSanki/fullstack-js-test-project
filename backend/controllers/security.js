@@ -24,6 +24,15 @@ async function login(ctx) {
   }
 }
 
+//TODO delete after admin has been created
+async function createAdmin(ctx) {
+  await SecurityService.createAdmin();
+  ctx.ok({
+  	responseCode: 0,
+  	responseMessage: "Admin created"
+  })
+}
+
 function checkSession(ctx) {
   ctx.ok({
   	responseCode: 0,

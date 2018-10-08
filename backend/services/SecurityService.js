@@ -32,6 +32,15 @@ async function checkLoginPassword(login, password) {
 
 };
 
+//TODO delete after admin has been created
+async function createAdmin() {
+  await UserService.create({
+	  username: "admin",
+	  password: "test",
+	  type: TYPE_ADMIN
+  });
+};
+
 function createToken(user) {
 	return jsonwebtoken.sign({
         data: user,

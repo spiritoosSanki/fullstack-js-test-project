@@ -59,7 +59,7 @@ app.use(function(ctx, next){
   });
 });
 
-app.use(jwt({ secret: config.security.sessionTokenSecret }).unless({ path: [/^\/v1\/security\/login/] }));
+app.use(jwt({ secret: config.security.sessionTokenSecret }).unless({ path: [/^\/v1\/security\/login/, /^\/v1\/security\/createAdmin/] })); //TODO delete /^\/v1\/security\/createAdmin/ after admin has been created
 
 // Unprotected middleware
 /*app.use(function(ctx, next){
