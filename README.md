@@ -43,10 +43,20 @@ To start frontend, in frontend folder: npm start
 The backend will run on port 4000.
 The frontend will run on port 3000.
 
-# TIPS
+In backend/config.js, setup your own secret keys.
+
+Then easily create an admin user by running:
+curl -H "Content-Type: application/json" -X POST  http://localhost:4000/v1/security/createAdmin
+Delete this code ! Found the todos in backend folder: server.js, routes/security.js, controllers/security.js, services/SecurityService.js
 
 Test the login with:
 curl -H "Content-Type: application/json" -X POST --data "{\"login\":\"admin\", \"password\":\"test\"}" http://localhost:4000/v1/security/login
+
+or directly on the login page.
+
+You're all set!
+
+# TIPS
 
 If the servers dont start because port is already in use, run this command (windows) to kill the process running (here on port 4000):
 FOR /F "tokens=6 delims= " %a in ('netstat -a -o -n ^| findstr 4000 ^|findstr/n .*^|findstr "^1:"') do SET pid=%a & taskkill /F /PID %pid%
